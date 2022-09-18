@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/randomNumberTxt"
+        android:text="@string/random_nuber_is"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/randomNumberTxt"
+        android:id="@+id/randomNumber"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#8BC34A"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/randomNumber"
+        android:id="@+id/randomNumberImg"
+
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollDicedBtn"
+        android:layout_below="@+id/randomNumberImg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="#4CAF50"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:paddingTop="10dp"
+        android:text="Dice Roll"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

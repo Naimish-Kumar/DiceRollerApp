@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dice Roller App</string>
+    <string name="random_nuber_is">Random Nuber is :</string>
+</resources>
